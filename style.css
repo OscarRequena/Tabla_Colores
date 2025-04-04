@@ -1,0 +1,28 @@
+.tabla ,th ,tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+thead tr th {
+    background-color: aliceblue;
+}
+
+.tabla tbody tr:nth-child(odd) {
+    background-color: red;
+}
+.tabla tbody tr:nth-child(even) {
+    background-color: darkgreen;
+}
+
+.tabla tbody td:nth-child(2)::after {
+    content: ' Kcal';
+}
+
+
+.tabla tbody td:nth-child(3)::after, td:nth-child(4)::after, td:nth-child(5)::after {
+    content: ' g';
+}
+
+
